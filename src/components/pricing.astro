@@ -1,0 +1,157 @@
+---
+import { SITE } from "@/utils/constants.js";
+---
+
+<section class="py-20 md:py-28 border-b border-zinc-200 dark:border-zinc-800/80 transition-colors">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="max-w-2xl mx-auto mb-16 text-center">
+      <h2 class="text-xs uppercase tracking-widest text-zinc-500 font-mono mb-3">Стоимость</h2>
+      <h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+        Честная цена без скрытых условий
+      </h3>
+      <p class="mt-4 text-zinc-600 dark:text-zinc-400">
+        Никаких ежемесячных подписок. Платите один раз — программа остается у вас навсегда.
+      </p>
+    </div>
+
+    <!-- Pricing Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-16">
+      
+      <!-- Card 1: Основная цена -->
+      <div class="rounded-2xl border border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900/60 p-8 flex flex-col justify-between relative">
+        <div class="absolute -top-3 right-6 px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-300 text-xs font-mono">
+          Основная цена
+        </div>
+
+        <div>
+          <div class="mb-6">
+            <h4 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">{SITE.name}</h4>
+            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Лицензия на 1 компьютер</p>
+          </div>
+
+          <div class="flex items-baseline gap-2 mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+            <span class="text-4xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight font-mono">5 900 ₽</span>
+            <span class="text-sm text-zinc-500">разово</span>
+          </div>
+
+          <ul class="space-y-4 mb-8 text-sm text-zinc-700 dark:text-zinc-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Лицензия на 1 компьютер</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>12 месяцев бесплатных обновлений и помощь разработчиков</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Готовые шаблоны для печати документов</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="/buy"
+          class="w-full inline-flex items-center justify-center py-3 px-4 text-sm font-medium text-white bg-zinc-900 hover:bg-zinc-800 dark:text-zinc-950 dark:bg-zinc-100 dark:hover:bg-white rounded-md transition-colors text-center shadow-sm">
+          Купить лицензию
+        </a>
+      </div>
+
+      <!-- Card 2: Второй компьютер -->
+      <div class="rounded-2xl border border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900/60 p-8 flex flex-col justify-between relative">
+        <div class="absolute -top-3 right-6 px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-300 text-xs font-mono">
+          Доп. место
+        </div>
+
+        <div>
+          <div class="mb-6">
+            <h4 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Второй компьютер</h4>
+            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Для той же торговой точки</p>
+          </div>
+
+          <div class="flex items-baseline gap-2 mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+            <span class="text-4xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight font-mono">2 900 ₽</span>
+            <span class="text-sm text-zinc-500">разово</span>
+          </div>
+
+          <ul class="space-y-4 mb-8 text-sm text-zinc-700 dark:text-zinc-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Если у вас в магазине два продавца на разных компьютерах</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Доплата за второе рабочее место в той же точке один раз</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="/buy"
+          class="w-full inline-flex items-center justify-center py-3 px-4 text-sm font-medium text-zinc-700 bg-zinc-100 hover:bg-zinc-200 dark:text-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 rounded-md transition-colors text-center shadow-sm">
+          Добавить рабочее место
+        </a>
+      </div>
+
+      <!-- Card 3: Настройка под ключ -->
+      <div class="rounded-2xl border-2 border-emerald-500/80 bg-white shadow-xl dark:border-emerald-500/60 dark:bg-zinc-900/60 p-8 flex flex-col justify-between relative">
+        <div class="absolute -top-3 right-6 px-3 py-1 rounded-full bg-emerald-500 text-white dark:bg-emerald-600 text-xs font-mono font-medium">
+          Популярное
+        </div>
+
+        <div>
+          <div class="mb-6">
+            <h4 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Настройка под ключ</h4>
+            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Полный комплекс услуг</p>
+          </div>
+
+          <div class="flex items-baseline gap-2 mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+            <span class="text-4xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight font-mono">8 900 ₽</span>
+            <span class="text-sm text-zinc-500">разово</span>
+          </div>
+
+          <ul class="space-y-4 mb-8 text-sm text-zinc-700 dark:text-zinc-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Всё то же самое, что в основной лицензии</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Настройка под вас личного шаблона документа</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Помощь в переносе товаров из старого Excel-файла</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="/buy"
+          class="w-full inline-flex items-center justify-center py-3 px-4 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-md transition-colors text-center shadow-sm">
+          Заказать настройку
+        </a>
+      </div>
+
+    </div>
+
+    <!-- What happens after a year section -->
+    <div class="max-w-3xl mx-auto rounded-2xl border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40 p-8 text-left">
+      <h4 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4 flex items-center gap-2">
+        <svg class="w-6 h-6 text-emerald-600 dark:text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        Что будет через год?
+      </h4>
+      <ul class="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
+        <li class="flex items-start gap-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0"></span>
+          <span>Через год программа не заблокируется и не перестанет работать. Она останется у вас навсегда.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0"></span>
+          <span>Если вам захочется получить новые функции или шаблоны, можно будет докупить обновление на следующий год за <strong class="text-zinc-900 dark:text-zinc-100">1 900 рублей</strong>.</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>

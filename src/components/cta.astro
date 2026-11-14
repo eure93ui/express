@@ -1,0 +1,27 @@
+---
+import { SITE } from "@/utils/constants.js";
+---
+
+<section class="py-20 md:py-28 bg-zinc-100/60 dark:bg-zinc-900/30 transition-colors">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+      Начните оформлять накладные за 30 секунд
+    </h3>
+    <p class="mt-4 text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto text-sm sm:text-base">
+      Скачайте установочный файл для Windows и оцените скорость работы в своей торговой точке.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+      <a
+        href={SITE.downloadUrl}
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white bg-zinc-900 hover:bg-zinc-800 dark:text-zinc-950 dark:bg-zinc-100 dark:hover:bg-white rounded-md transition-all shadow-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        Скачать .exe
+      </a>
+      <a
+        href="/buy"
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-zinc-700 bg-white hover:bg-zinc-50 dark:text-zinc-300 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-300 dark:border-zinc-800 rounded-md transition-all shadow-sm">
+        Купить лицензию
+      </a>
+    </div>
+  </div>
+</section>

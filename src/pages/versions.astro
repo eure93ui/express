@@ -1,0 +1,56 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import { SITE } from "@/utils/constants.js";
+---
+
+<Layout title="Архив версий | Экспресс-Накладная">
+  <Container>
+    <div class="py-16 md:py-24 max-w-3xl mx-auto">
+      <Sectionhead>
+        <Fragment slot="title">Архив версий</Fragment>
+        <Fragment slot="desc">
+          История обновлений и предыдущие выпуски программы {SITE.name}.
+        </Fragment>
+      </Sectionhead>
+
+      <div class="mt-12 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-xl p-8 text-center transition-colors">
+        <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-zinc-600 dark:text-zinc-400">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+          </svg>
+        </div>
+        <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-2">Раздел находится в разработке</h2>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 max-w-md mx-auto mb-6">
+          Скоро здесь появится полный архив всех предыдущих версий приложения, списки изменений (changelog) и ссылки на скачивание дистрибутивов.
+        </p>
+        <div class="flex items-center justify-center gap-4">
+          <a
+            href="/"
+            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-zinc-900 hover:bg-zinc-800 dark:text-zinc-950 dark:bg-zinc-100 dark:hover:bg-white rounded-md transition-colors shadow-sm">
+            На главную
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-zinc-200 dark:border-zinc-800 pt-8">
+        <h3 class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-4">Текущая актуальная версия</h3>
+        <div class="flex items-center justify-between p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-semibold text-zinc-900 dark:text-zinc-100">{SITE.name} {SITE.version}</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Актуальная</span>
+            </div>
+            <p class="text-xs text-zinc-500 mt-1">Релиз последней стабильной версии</p>
+          </div>
+          <a
+            href={SITE.downloadUrl}
+            class="text-xs font-medium text-zinc-900 dark:text-zinc-100 hover:underline">
+            Скачать →
+          </a>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

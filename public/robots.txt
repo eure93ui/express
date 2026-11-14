@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://express-nakladnaya.ru/sitemap-index.xml

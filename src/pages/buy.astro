@@ -1,0 +1,89 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import { SITE } from "@/utils/constants.js";
+
+const hwid = Astro.url.searchParams.get("hwid") || "";
+---
+
+<Layout title="Оформление лицензии | Экспресс-Накладная">
+  <Container>
+    <div class="py-16 md:py-24 max-w-xl mx-auto">
+      <div class="mb-10 text-center">
+        <h1 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">Активация лицензии</h1>
+        <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          Приобретите пожизненную лицензию на программу «{SITE.name}»
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900/50 p-6 md:p-8 shadow-xl space-y-6">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 font-mono mb-2">
+            Идентификатор компьютера (HWID)
+          </label>
+          <div class="relative">
+            <input
+              type="text"
+              readonly
+              value={hwid}
+              placeholder={hwid ? "" : "HWID не передан (будет запрошен при активации)"}
+              class="w-full rounded-md bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 px-4 py-2.5 text-sm font-mono text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-700"
+            />
+          </div>
+          {hwid ? (
+            <p class="mt-1.5 text-xs text-emerald-600 dark:text-emerald-400 font-mono">
+              ✓ HWID успешно получен из приложения
+            </p>
+          ) : (
+            <p class="mt-1.5 text-xs text-zinc-500">
+              Вы открыли страницу напрямую. Если вы переходите из приложения, HWID подставится автоматически.
+            </p>
+          )}
+        </div>
+
+        <div class="pt-4 border-t border-zinc-200 dark:border-zinc-800 space-y-4">
+          <div class="flex justify-between text-sm">
+            <span class="text-zinc-600 dark:text-zinc-400">Лицензия:</span>
+            <span class="text-zinc-900 dark:text-zinc-100 font-medium">{SITE.name} (Навсегда)</span>
+          </div>
+          <div class="flex justify-between text-sm">
+            <span class="text-zinc-600 dark:text-zinc-400">Стоимость:</span>
+            <span class="text-zinc-900 dark:text-zinc-100 font-bold font-mono text-lg">{SITE.price}</span>
+          </div>
+        </div>
+
+        <form class="space-y-4 pt-4 border-t border-zinc-200 dark:border-zinc-800" onsubmit="event.preventDefault(); alert('Это демонстрационная версия. Интеграция с платежной системой в разработке.');">
+          <div>
+            <label class="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">Ваш Email (для отправки ключа)</label>
+            <input
+              type="email"
+              required
+              placeholder="ivan@mail.ru"
+              class="w-full rounded-md bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 px-4 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-700"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">ФИО / Название ИП</label>
+            <input
+              type="text"
+              required
+              placeholder="ИП Смирнов А.В."
+              class="w-full rounded-md bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 px-4 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-700"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full mt-2 py-3 px-4 text-sm font-medium text-white bg-zinc-900 hover:bg-zinc-800 dark:text-zinc-950 dark:bg-zinc-100 dark:hover:bg-white rounded-md transition-colors shadow-sm">
+            Перейти к оплате ({SITE.price})
+          </button>
+        </form>
+
+        <p class="text-center text-xs text-zinc-500">
+          Безопасная оплата банковской картой или СБП. Ключ активации придет на почту сразу после оплаты.
+        </p>
+      </div>
+    </div>
+  </Container>
+</Layout>

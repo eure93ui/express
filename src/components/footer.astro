@@ -1,0 +1,25 @@
+---
+import Container from "@/components/container.astro";
+import { SITE } from "@/utils/constants.js";
+---
+
+<footer class="border-t border-zinc-200 dark:border-zinc-800/80 py-12 text-zinc-500 text-xs transition-colors">
+  <Container>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p>© {new Date().getFullYear()} {SITE.name}. Все права защищены.</p>
+        <p class="mt-1">Программа для розничных продавцов и микробизнеса.</p>
+        <p class="mt-2 text-zinc-400 dark:text-zinc-600 text-[11px]">
+          Предыдущие выпуски программы можно найти в <a href="/versions" class="underline hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors">архиве версий</a>.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-6 items-center">
+        <a href="/" class="hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors">Главная</a>
+        <a href="/pricing" class="hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors">Цены</a>
+        <a href="/buy" class="hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors">Купить</a>
+        <a href="/contact" class="hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors">Контакты</a>
+        <a href="/versions" class="text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors text-[11px]">Архив</a>
+      </div>
+    </div>
+  </Container>
+</footer>
