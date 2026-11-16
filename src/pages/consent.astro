@@ -1,0 +1,107 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import { SITE } from "@/utils/constants.js";
+---
+
+<Layout title="Согласие на обработку персональных данных | Экспресс-Накладная">
+  <Container>
+    <div class="py-12 md:py-16 max-w-3xl mx-auto">
+      <Sectionhead>
+        <Fragment slot="title">Согласие на обработку персональных данных</Fragment>
+        <Fragment slot="desc">
+          Условия и порядок обработки персональных данных при использовании сайта и программы
+        </Fragment>
+      </Sectionhead>
+
+      <div class="mt-8 text-xs text-zinc-500 dark:text-zinc-400 text-right">
+        Редакция от 16 ноября 2026 г.
+      </div>
+
+      <div class="mt-8 prose prose-zinc dark:prose-invert max-w-none text-sm leading-relaxed space-y-6 text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 md:p-10 shadow-sm">
+
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 italic">
+          (Размещается на сайте в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных»)
+        </p>
+
+        <p>
+          Настоящим я, действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, даю свое конкретное, предметное, информированное, сознательное и однозначное согласие <strong>Самозанятому (плательщику НПД) Шкоде Артему Алексеевичу (ИНН 644922032304)</strong> (далее — <strong>«Оператор»</strong>), адрес электронной почты: <a href="mailto:support@express-nakladnaya.ru" class="text-sky-600 dark:text-sky-400 underline font-medium">support@express-nakladnaya.ru</a>, на обработку моих персональных данных на следующих условиях:
+        </p>
+
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mt-6">1. Перечень персональных данных, на обработку которых дается согласие:</h3>
+        <ul class="list-disc pl-5 space-y-1.5">
+          <li>адрес электронной почты (<code class="text-xs bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">email</code>);</li>
+          <li>уникальный технический идентификатор оборудования (<code class="text-xs bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">Hardware ID</code>);</li>
+          <li>никнейм / идентификатор в мессенджере Telegram (при обращении в службу поддержки);</li>
+          <li>наименование организации / ИП и ИНН (при оплате по безналичному счету);</li>
+          <li>технические сведения о посещении сайта (<code class="text-xs bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">cookie</code>, IP-адрес, сведения о браузере).</li>
+        </ul>
+
+        <div class="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 my-4 text-xs text-zinc-600 dark:text-zinc-400">
+          <strong>Примечание об архитектуре Local-First:</strong> В соответствии с Политикой конфиденциальности, данные, вносимые в локальную базу данных программы «Экспресс-Накладная» (справочники, номенклатура, накладные, чеки и т.д.), хранятся исключительно на локальном устройстве пользователя и не передаются Оператору.
+        </div>
+
+        <hr class="border-zinc-200 dark:border-zinc-800 my-6" />
+
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">2. Цели обработки персональных данных:</h3>
+        <ul class="list-disc pl-5 space-y-1.5">
+          <li>оформление заказа, генерация и направление Лицензионного ключа для программы «Экспресс-Накладная»;</li>
+          <li>формирование и направление электронного кассового чека (сведений о расчете);</li>
+          <li>оказание технической поддержки, консультаций и перевыпуск лицензионного ключа при смене оборудования;</li>
+          <li>обеспечение работоспособности сайта <code class="text-xs bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">https://express-nakladnaya.ru</code> и ведение веб-аналитики (Яндекс.Метрика).</li>
+        </ul>
+
+        <hr class="border-zinc-200 dark:border-zinc-800 my-6" />
+
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">3. Перечень действий с персональными данными:</h3>
+        <p>
+          Сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (предоставление, доступ — исключительно платежным агентам для проведения оплаты и ФНС России для фиксации расчета), блокирование, удаление, уничтожение с использованием средств автоматизации и без использования таких средств.
+        </p>
+
+        <hr class="border-zinc-200 dark:border-zinc-800 my-6" />
+
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">4. Срок действия и порядок отзыва:</h3>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>
+            Согласие вступает в силу с момента проставления отметки (чекбокса) в соответствующей форме на сайте <code class="text-xs bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">https://express-nakladnaya.ru</code> или с момента отправки обращения в службу поддержки и действует до достижения указанных целей обработки либо до момента отзыва настоящего Согласия.
+          </li>
+          <li>
+            Я уведомлен(а), что настоящее Согласие может быть отозвано мной в любой момент путем направления письменного уведомления в свободной форме на адрес электронной почты Оператора: <a href="mailto:support@express-nakladnaya.ru" class="text-sky-600 dark:text-sky-400 underline font-medium">support@express-nakladnaya.ru</a>.
+          </li>
+        </ul>
+
+        <hr class="border-zinc-200 dark:border-zinc-800 my-6" />
+
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">5. Связь с Политикой конфиденциальности:</h3>
+        <p>
+          Я подтверждаю, что ознакомлен(а) с <a href="/privacy" class="text-sky-600 dark:text-sky-400 underline font-medium">Политикой в отношении обработки персональных данных</a>, размещенной по адресу: <code class="text-xs bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">https://express-nakladnaya.ru/privacy</code>.
+        </p>
+
+        <hr class="border-zinc-200 dark:border-zinc-800 my-6" />
+
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">6. Реквизиты оператора</h3>
+        <ul class="list-none pl-0 space-y-1.5 text-zinc-700 dark:text-zinc-300">
+          <li><strong>Оператор:</strong> Самозанятый (плательщик НПД) Шкода Артем Алексеевич</li>
+          <li><strong>ИНН:</strong> <code class="bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded">644922032304</code></li>
+          <li><strong>Email:</strong> <a href="mailto:support@express-nakladnaya.ru" class="text-sky-600 dark:text-sky-400 underline">support@express-nakladnaya.ru</a></li>
+          <li><strong>Telegram:</strong> <a href="https://t.me/ExpressNakladnayaSupportBot" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 underline">@ExpressNakladnayaSupportBot</a></li>
+        </ul>
+
+      </div>
+
+      <div class="mt-8 text-center flex items-center justify-center gap-4">
+        <a
+          href="/privacy"
+          class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-zinc-700 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg transition-colors shadow-sm">
+          Политика конфиденциальности
+        </a>
+        <a
+          href="/"
+          class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-zinc-900 hover:bg-zinc-800 dark:text-zinc-950 dark:bg-zinc-100 dark:hover:bg-white rounded-lg transition-colors shadow-sm">
+          ← На главную
+        </a>
+      </div>
+    </div>
+  </Container>
+</Layout>
