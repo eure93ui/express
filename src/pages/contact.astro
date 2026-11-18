@@ -24,19 +24,17 @@ import { Icon } from "astro-icon/components";
             </p>
 
             <div class="mt-6 space-y-4">
-              <!-- Telegram Bot -->
+              <!-- Телеграм-бот -->
               <a
                 href="https://t.me/ExpressNakladnayaBot"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-3.5 p-3.5 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 bg-zinc-50 dark:bg-zinc-950/50 transition-colors group">
-                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 shrink-0">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27 0-.12.05-1.98 1.26-5.58 3.7-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.98-1.73 6.64-2.87 7.98-3.44 3.8-1.6 4.59-1.88 5.1-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.13-.04.22z"/>
-                  </svg>
+                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 shrink-0 p-2">
+                  <img src={`${import.meta.env.BASE_URL}icon.svg`} alt="Экспресс-Накладная" class="w-6 h-6 rounded shadow-sm" />
                 </div>
                 <div>
-                  <div class="text-xs font-medium text-zinc-500 dark:text-zinc-400">Telegram-бот (рекомендуется)</div>
+                  <div class="text-xs font-medium text-zinc-500 dark:text-zinc-400">Телеграм-бот (рекомендуется)</div>
                   <div class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:underline">@ExpressNakladnayaBot</div>
                 </div>
               </a>
