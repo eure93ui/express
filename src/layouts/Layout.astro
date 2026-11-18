@@ -17,7 +17,6 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-const resolvedImageWithDomain = new URL("/opengraph.jpg", Astro.site).toString();
 ---
 
 <!doctype html>
@@ -47,17 +46,6 @@ const resolvedImageWithDomain = new URL("/opengraph.jpg", Astro.site).toString()
       title={title}
       description={description}
       canonical={canonicalURL}
-      openGraph={{
-        basic: {
-          url: canonicalURL,
-          type: "website",
-          title: title,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: "Экспресс-Накладная — Интерфейс программы",
-        },
-      }}
     />
   </head>
   <body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 font-sans antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-zinc-900 dark:selection:text-zinc-100 min-h-screen flex flex-col justify-between">
