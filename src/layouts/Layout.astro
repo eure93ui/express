@@ -46,6 +46,27 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
       title={title}
       description={description}
       canonical={canonicalURL}
+      openGraph={{
+        basic: {
+          title: title,
+          type: "website",
+          image: new URL(`${import.meta.env.BASE_URL}opengraph.png`, canonicalURL).toString(),
+          url: canonicalURL,
+        },
+        image: {
+          alt: title,
+          width: 1200,
+          height: 630,
+          type: "image/png",
+        },
+        site_name: "Экспресс-Накладная",
+      }}
+      twitter={{
+        card: "summary_large_image",
+        title: title,
+        description: description,
+        image: new URL(`${import.meta.env.BASE_URL}opengraph.png`, canonicalURL).toString(),
+      }}
     />
   </head>
   <body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 font-sans antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-zinc-900 dark:selection:text-zinc-100 min-h-screen flex flex-col justify-between">
