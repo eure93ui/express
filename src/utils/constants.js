@@ -6,4 +6,6 @@ export const SITE = {
   downloadUrl: "/download/express-nakladnaya-setup.exe",
   description: "Программа для розничных продавцов и микробизнеса. Печать накладных за 30 секунд. Без подписок и интернета.",
   supportEmail: "support@express-nakladnaya.ru",
+  owner: "Самозанятый (плательщик НПД) Шкода Артем Алексеевич",
+  inn: "644922032304",
 };
